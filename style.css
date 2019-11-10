@@ -19,7 +19,7 @@ body{
 /*tamaño para el resto de secciones de la pagina*/
 .tamano{
     width: 100%;
-    height: 500px;
+    height: 600px;
     
 }
 
@@ -125,6 +125,49 @@ img{
     width: 50%;
     height: 100%;
 }
+
+#contenedorFormulario{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#formcontacto{
+    width: 70%;
+    height: 100%;
+}
+
+.desplegarhaciaabao{
+    display: block;
+    width: 100%;
+    margin: 0.1rem;
+
+}
+
+#formcontacto textarea{
+    height: 7rem;
+}
+
+#formcontacto input{
+    height: 2rem;
+}
+
+#contenedordebotn{
+    display: flex;
+    justify-content: center;
+}
+
+#submitbuttom{
+    width: 15%;
+    height: auto;
+    margin: 0.1rem;
+}
+
+
+
+
+
 /*Fin Secion contacto*/
 
 #Activos{
