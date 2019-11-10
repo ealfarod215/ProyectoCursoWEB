@@ -1,0 +1,122 @@
+*{
+    font-family: 'Muli', sans-serif;
+}
+
+body{
+    background: url('Imagenes/spencer-imbrock-JAHdPHMoaEA-unsplash.jpg');
+   margin: auto;
+}
+
+
+#Encabezado {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0,0.7);
+}
+#Encabezado nav ul{
+    display: flex;
+   
+    justify-content: flex-end;
+    background: white;
+    list-style: none;
+
+}
+
+#Encabezado nav ul a{
+    text-decoration: none;
+}
+
+#Encabezado nav ul li{
+    padding: 1rem;
+    margin: 0.2rem;
+    background: blanchedalmond;
+}
+
+#cuerpo{
+    margin-top:6%;
+}
+
+
+.tamano{
+    width: 100%;
+    height: 500px;
+    
+}
+
+.HyFtamano{
+    width: 100%;
+    height: 10%;
+}
+
+
+#Inicio{
+    background:rgba(114, 24, 187, 1);
+    
+}
+
+#About{
+    background:bisque;
+    display: flex;
+}
+.fotoAbout{
+    
+   width: 50%;
+   height: 100%;
+   background: url(Imagenes/dominik-scythe-MTO5SmPraX4-unsplash.jpg) center center
+
+}
+.contenidoAbout{
+       
+   width: 50%;
+   height: 100%;
+   background: #333
+}
+
+#Profesores{
+    display: flex;
+}
+.fotoProfes{
+    width: 50%;
+    height: 100%;
+    background: rgb(196, 105, 105)
+}
+.contenidoProfe{
+    width: 50%;
+    height: 100%;
+    background: rgb(43, 43, 155);
+}
+img{
+    width: 20%;
+}
+#Estudiantes{
+    background: brown;
+}
+
+#Estudiantes .fotoEstudiante{
+    height: 50%;
+}
+
+#Contacto{
+    background: chocolate;
+}
+
+#Activos{
+    background: cyan;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+#Cursos{
+    background: darkgreen;
+}
+
+#Pie{
+    bottom: 0;
+    background: deeppink;
+}
+
+h1{
+    text-align: center;
+}
