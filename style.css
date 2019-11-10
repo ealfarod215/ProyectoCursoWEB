@@ -44,23 +44,29 @@ body{
 }
 
 #Encabezado nav ul li{
-    width: 120px;
-    padding: 1rem;   
+    padding: 1rem;
     margin: 0.7rem;
     background: rgb(230, 114, 65);
-    text-align: center;
-    font-size: 1.3rem;
-    
 }
-/*Fin de trabajo de estilos en el header*/
-/****************************************/
-
-/*Secciones que componen la estructura de la pagina*/
-/*Se inicia trabajo de estilos en el cuerpo de la pagina*/
 
 #cuerpo{
     margin-top:6%;
 }
+/*Fin de trabajo de estilos en el header*/
+/****************************************/
+
+
+.tamano{
+    width: 100%;
+    height: 500px;
+    margin-bottom: 1.5rem;
+}
+
+.HyFtamano{
+    width: 100%;
+    height: 10%;
+}
+
 
 #Inicio{
     background:rgba(255, 255, 255, 0.26);
