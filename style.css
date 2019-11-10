@@ -3,7 +3,7 @@
 }
 
 body{
-    background: url('Imagenes/spencer-imbrock-JAHdPHMoaEA-unsplash.jpg');
+    background: #ECB581;
    margin: auto;
 }
 
@@ -16,9 +16,8 @@ body{
 }
 #Encabezado nav ul{
     display: flex;
-   
     justify-content: flex-end;
-    background: white;
+    background: rgba(255, 255, 255, 0.26);;
     list-style: none;
 
 }
@@ -29,8 +28,8 @@ body{
 
 #Encabezado nav ul li{
     padding: 1rem;
-    margin: 0.2rem;
-    background: blanchedalmond;
+    margin: 0.7rem;
+    background: rgb(230, 114, 65);
 }
 
 #cuerpo{
@@ -51,12 +50,12 @@ body{
 
 
 #Inicio{
-    background:rgba(114, 24, 187, 1);
+    background:rgba(255, 255, 255, 0.26);
     
 }
 
 #About{
-    background:bisque;
+    background:rgba(255, 255, 255, 0.26);
     display: flex;
 }
 .fotoAbout{
@@ -70,7 +69,7 @@ body{
        
    width: 50%;
    height: 100%;
-   background: #333
+   background:rgba(255, 255, 255, 0.26);
 }
 
 #Profesores{
@@ -79,18 +78,18 @@ body{
 .fotoProfes{
     width: 50%;
     height: 100%;
-    background: rgb(196, 105, 105)
+    background: rgba(255, 255, 255, 0.26);
 }
 .contenidoProfe{
     width: 50%;
     height: 100%;
-    background: rgb(43, 43, 155);
+    background: rgba(255, 255, 255, 0.26);
 }
 img{
     width: 20%;
 }
 #Estudiantes{
-    background: brown;
+    background: rgba(255, 255, 255, 0.26);
 }
 
 #Estudiantes .fotoEstudiante{
@@ -98,23 +97,23 @@ img{
 }
 
 #Contacto{
-    background: chocolate;
+    background: rgba(255, 255, 255, 0.26);
 }
 
 #Activos{
-    background: cyan;
+    background: rgba(255, 255, 255, 0.26);
 }
 .container{
     display: flex;
     justify-content: center;
 }
 #Cursos{
-    background: darkgreen;
+    background: rgba(255, 255, 255, 0.26);
 }
 
 #Pie{
     bottom: 0;
-    background: deeppink;
+    background: rgba(255, 255, 255, 0.26);
 }
 
 h1{
