@@ -47,9 +47,18 @@ body{
 #Encabezado nav ul li{
     padding: 1rem;
     margin: 0.7rem;
-    background: rgb(230, 114, 65);
+    /*background: rgb(230, 114, 65);*/
+    background: rgba(0, 0, 0,0.7);
     border-radius: 15%;
 }
+
+#Encabezado nav ul li:hover{
+  
+    background: rgb(230, 114, 65);
+    
+    
+}
+
 
 #cuerpo{
     margin-top:5%;
