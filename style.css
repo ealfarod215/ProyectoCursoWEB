@@ -13,23 +13,23 @@ body{
 /*Tamaño para header y footer*/
 .HyFtamano{
     width: 100%;
-    height: 10%;
 }
 
 /*tamaño para el resto de secciones de la pagina*/
 .tamano{
     width: 100%;
     height: 500px;
-    
+    margin-bottom: 1.5rem;
 }
 
 
 /*Se inicia trabajo de estilos en el header*/
-#Encabezado {
+#Encabezado nav {
     position: fixed;
     top: 0px;
     left: 0px;
     background: rgba(0, 0, 0,0.7);
+    width: 100%;
 }
 #Encabezado nav ul{
     display: flex;
@@ -54,18 +54,6 @@ body{
 }
 /*Fin de trabajo de estilos en el header*/
 /****************************************/
-
-
-.tamano{
-    width: 100%;
-    height: 500px;
-    margin-bottom: 1.5rem;
-}
-
-.HyFtamano{
-    width: 100%;
-    height: 10%;
-}
 
 
 #Inicio{
