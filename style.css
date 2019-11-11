@@ -7,7 +7,7 @@
 /*Se establece caracteristicas basicas de la pagina*/
 body{
     background: #ECB581;
-   margin: auto;
+    margin: auto;
 }
 
 /*Tamaño para header y footer*/
@@ -18,8 +18,8 @@ body{
 /*tamaño para el resto de secciones de la pagina*/
 .tamano{
     width: 100%;
-    height: 500px;
-    margin-bottom: 1.5rem;
+    height: 600px;
+    margin-bottom: 1.5rem;    
 }
 
 
@@ -50,34 +50,69 @@ body{
 }
 
 #cuerpo{
-    margin-top:6%;
+    margin-top:5%;
 }
 /*Fin de trabajo de estilos en el header*/
 /****************************************/
-
-
+/*Inicio de seccion Inicio*/
 #Inicio{
-    background:rgba(255, 255, 255, 0.26);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:url(Imagenes/keys_treble_clef_music_notes_74359_1920x1080.jpg);
+    position: relative;
+    margin-top: 5.3%;
     
 }
 
+/*crea overlay sobre la seccion inico*/
+#Inicio:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+}
+
+#Inicio::after{
+    content: 'CASA DE LA CULTURA MORA';
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+   z-index: 1;
+}
+
+/*Fin de seccion Inicio*/
+/***************************************/
+/*Inicio de seccion About*/
 #About{
     background:rgba(255, 255, 255, 0.26);
     display: flex;
 }
 .fotoAbout{
-    
    width: 50%;
    height: 100%;
-   background: url(Imagenes/dominik-scythe-MTO5SmPraX4-unsplash.jpg) center center
+}
 
+#About img{
+    width: 100%;
+    height: 100%;
 }
 .contenidoAbout{
-       
    width: 50%;
    height: 100%;
-   background:rgba(255, 255, 255, 0.26);
 }
+
+#parrafos{
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    font-size: 0.90rem;
+    widows: 100%;
+    height: 100%;
+}
+/*Fin de seccion About*/
 
 #Profesores{
     display: flex;
@@ -113,6 +148,49 @@ img{
     width: 50%;
     height: 100%;
 }
+
+#contenedorFormulario{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#formcontacto{
+    width: 70%;
+    height: 100%;
+}
+
+.desplegarhaciaabao{
+    display: block;
+    width: 100%;
+    margin: 0.1rem;
+
+}
+
+#formcontacto textarea{
+    height: 7rem;
+}
+
+#formcontacto input{
+    height: 2rem;
+}
+
+#contenedordebotn{
+    display: flex;
+    justify-content: center;
+}
+
+#submitbuttom{
+    width: 15%;
+    height: auto;
+    margin: 0.1rem;
+}
+
+
+
+
+
 /*Fin Secion contacto*/
 
 #Activos{
@@ -129,8 +207,4 @@ img{
 #Pie{
     bottom: 0;
     background: rgba(255, 255, 255, 0.26);
-}
-
-h1{
-    text-align: center;
 }
