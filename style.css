@@ -47,6 +47,7 @@ body{
     padding: 1rem;
     margin: 0.7rem;
     background: rgb(230, 114, 65);
+    border-radius: 15%;
 }
 
 #cuerpo{
