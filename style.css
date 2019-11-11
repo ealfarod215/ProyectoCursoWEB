@@ -29,7 +29,8 @@ body{
     position: fixed;
     top: 0px;
     left: 0px;
-    background: rgba(0, 0, 0,0.7);
+    /*background: rgba(0, 0, 0,0.7);*/
+    background: rgba(78, 10, 1, 0.7);
     width: 100%;
 }
 #Encabezado nav ul{
@@ -53,8 +54,8 @@ body{
     height: 2rem;
     padding: 1rem;
     margin: 0.7rem;
-    /*background: rgb(230, 114, 65);*/
-    background: rgba(0, 0, 0,0.7);
+    /*background: rgba(0, 0, 0,0.7);*/
+    background: rgba(78, 10, 1, 0.7);
     border-radius: 1rem;
 }
 
