@@ -3,6 +3,10 @@
     font-family: 'Muli', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 /*Se establece caracteristicas basicas de la pagina*/
 body{
@@ -131,7 +135,8 @@ body{
     height: 100%;
 }
 /*Fin de seccion About*/
-
+/*********************/
+/*Inicio de seccion Profesores*/
 #Profesores{
     display: flex;
 }
@@ -145,9 +150,14 @@ body{
     height: 100%;
     background: rgba(255, 255, 255, 0.26);
 }
+/*Fin seccion Profesores*/
+/***********************/
+
 img{
     width: 20%;
 }
+
+/*Inicio seccion Estudiante*/
 #Estudiantes{
     display: flex;
 }
@@ -163,7 +173,8 @@ img{
     height: 100%;
     background: rgba(255, 255, 255, 0.26);
 }
-
+/*Fin seccion Estudiante*/
+/**************************/
 /*Inicio Secion contacto*/
 #Contacto{
     display: flex;
@@ -226,10 +237,14 @@ img{
     display: flex;
     justify-content: center;
 }
+
+/*Inicio seccion Cursos*/
 #Cursos{
     background: rgba(255, 255, 255, 0.26);
 }
 
+/*Fin seccion Cursos*/
+/***********************/
 #Pie{
     bottom: 0;
     background: rgba(255, 255, 255, 0.26);
