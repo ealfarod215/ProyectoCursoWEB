@@ -1,16 +1,22 @@
 <?php
 $nombre = $_POST['nombre'];
-$email = $_POST['email'];
-$mensaje = $_POST['mensaje'];
-$para = 'tucorreo@email.com';
-$titulo = 'Hola - La Webera';
- 
-$msjCorreo = "Nombre: $nombre\n E-Mail: $email\n Mensaje:\n $mensaje";
- 
+$apellido = $_POST['apellido'];
+$correo = $_POST['correo'];
+$numtelefono = $_POST['numtelefono'];
+$descripcion = $_POST['descripcion'];
+$para = 'edison.alfaro.duarte@gmail.com';
+$titulo = 'Casa cultura Mora';
+
+$msjCorreo = "Nombre: $nombre\n 
+Apellido: $apellido\n 
+E-Mail: $correo\n
+Numero-Telefono: $numtelefono \n
+Mensaje:\n $descripcion";
+
 if ($_POST['submit']) {
-if (mail ($para, $titulo, $msjCorreo)) {
-echo 'El mensaje se ha enviado';
-} else {
-echo 'Falló el envio';
-}
+    if (mail($para, $titulo, $msjCorreo)) {
+        echo 'El mensaje se ha enviado';
+    } else {
+        echo 'Falló el envio';
+    }
 }
