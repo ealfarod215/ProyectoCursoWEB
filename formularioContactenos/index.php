@@ -1,9 +1,9 @@
 <?php
-$nombre = $_POST['nombre'];
-$apellido = $_POST['apellido'];
-$correo = $_POST['correo'];
-$numtelefono = $_POST['numtelefono'];
-$descripcion = $_POST['descripcion'];
+$nombre = $_POST['Nombre'];
+$apellido = $_POST['Apellido'];
+$correo = $_POST['Correo'];
+$numtelefono = $_POST['Telefono'];
+$descripcion = $_POST['Descripcion'];
 $para = 'edison.alfaro.duarte@gmail.com';
 $titulo = 'Casa cultura Mora';
 
@@ -13,7 +13,7 @@ E-Mail: $correo\n
 Numero-Telefono: $numtelefono \n
 Mensaje:\n $descripcion";
 
-if ($_POST['submit']) {
+if ($_POST['Send']) {
     if (mail($para, $titulo, $msjCorreo)) {
         echo 'El mensaje se ha enviado';
     } else {
