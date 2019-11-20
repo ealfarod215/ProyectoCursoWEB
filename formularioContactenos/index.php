@@ -36,20 +36,14 @@ function enviarEmail()
             //Recipients
             $mail->setFrom('edisonpollociego@hotmail.com', 'Mailer');
             $mail->addAddress('edisonpollociego@gmail.com', 'Mailer');     // Add a recipient
-            //$mail->addAddress('ellen@example.com');               // Name is optional
-            //$mail->addReplyTo('info@example.com', 'Information');
-            //$mail->addCC('cc@example.com');
-            //$mail->addBCC('bcc@example.com');
+          
 
-            // Attachments
-            //$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-            //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
+          
 
             // Content
             $mail->isHTML(true);                                  // Set email format to HTML
             $mail->Subject = 'Correo de Contacto';
             $mail->Body    = 'Nombre: ' . $nombre . '<br/>Apellido: ' . $apellido . '<br/>Correo: ' . $correo . '<br/>Telefono: ' . $numtelefono . '<br/>Descripcion: ' . $descripcion . '<br/>';
-            //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
             $mail->send();
             echo 'Message has been sent';
