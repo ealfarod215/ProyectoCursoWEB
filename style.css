@@ -17,7 +17,7 @@ h1 {
 
 body {
     background: #ECB581;
-    margin: auto;
+    margin    : auto;
 }
 
 
@@ -31,8 +31,8 @@ body {
 /*tamaño para el resto de secciones de la pagina*/
 
 .tamano {
-    width: 100%;
-    height: 600px;
+    width        : 100%;
+    height       : 600px;
     margin-bottom: 1.5rem;
 }
 
@@ -40,37 +40,37 @@ body {
 /*Se inicia trabajo de estilos en el header*/
 
 #Encabezado nav {
-    z-index: 2;
-    position: fixed;
-    top: 0px;
-    left: 0px;
+    z-index   : 2;
+    position  : fixed;
+    top       : 0px;
+    left      : 0px;
     background: rgba(78, 10, 1, 0.7);
-    width: 100%;
+    width     : 100%;
 }
 
 #Encabezado nav ul {
-    display: flex;
+    display        : flex;
     justify-content: flex-end;
-    background: rgba(255, 255, 255, 0.26);
-    list-style: none;
+    background     : rgba(255, 255, 255, 0.26);
+    list-style     : none;
 }
 
 #Encabezado nav ul a {
     text-decoration: none;
-    color: white;
+    color          : white;
 }
 
 #Encabezado nav ul li {
-    display: flex;
+    display        : flex;
     justify-content: center;
-    align-items: center;
-    width: 5rem;
-    height: 2rem;
-    padding: 1rem;
-    margin: 0.7rem;
-    /*background: rgba(0, 0, 0,0.7);*/
-    background: rgba(78, 10, 1, 0.7);
-    border-radius: 1rem;
+    align-items    : center;
+    width          : 5rem;
+    height         : 2rem;
+    padding        : 1rem;
+    margin         : 0.7rem;
+    /*background   : rgba(0, 0, 0,0.7);*/
+    background     : rgba(78, 10, 1, 0.7);
+    border-radius  : 1rem;
 }
 
 #Encabezado nav ul li:hover {
@@ -91,31 +91,31 @@ body {
 /*Inicio de seccion Inicio*/
 
 #Inicio {
-    display: flex;
+    display        : flex;
     justify-content: center;
-    align-items: center;
-    background: url(Imagenes/keys_treble_clef_music_notes_74359_1920x1080.jpg);
-    position: relative;
-    margin-top: 5.3%;
+    align-items    : center;
+    background     : url(Imagenes/keys_treble_clef_music_notes_74359_1920x1080.jpg);
+    position       : relative;
+    margin-top     : 5.3%;
 }
 
 
 /*crea overlay sobre la seccion inico*/
 
 #Inicio:before {
-    content: '';
-    width: 100%;
-    height: 100%;
+    content   : '';
+    width     : 100%;
+    height    : 100%;
     background: rgba(0, 0, 0, 0.3);
-    position: absolute;
+    position  : absolute;
 }
 
 #Inicio::after {
-    content: 'CASA DE LA CULTURA MORA';
-    font-size: 5rem;
-    color: white;
+    content   : 'CASA DE LA CULTURA MORA';
+    font-size : 5rem;
+    color     : white;
     text-align: center;
-    z-index: 0;
+    z-index   : 0;
 }
 
 
@@ -129,32 +129,32 @@ body {
 
 #About {
     background: rgba(255, 255, 255, 0.26);
-    display: flex;
+    display   : flex;
 }
 
 .fotoAbout {
-    width: 50%;
+    width : 50%;
     height: 100%;
 }
 
 #About img {
-    width: 100%;
+    width : 100%;
     height: 100%;
 }
 
 .contenidoAbout {
-    width: 50%;
+    width : 50%;
     height: 100%;
 }
 
 #parrafos {
-    text-align: justify;
+    text-align     : justify;
     justify-content: center;
-    align-items: center;
-    margin: 1rem;
-    font-size: 0.8rem;
-    width: 95%;
-    height: 100%;
+    align-items    : center;
+    margin         : 1rem;
+    font-size      : 0.8rem;
+    width          : 95%;
+    height         : 100%;
 }
 
 
@@ -171,14 +171,14 @@ body {
 }
 
 .fotoProfes {
-    width: 50%;
-    height: 100%;
+    width     : 50%;
+    height    : 100%;
     background: rgba(255, 255, 255, 0.26);
 }
 
 .contenidoProfe {
-    width: 50%;
-    height: 100%;
+    width     : 50%;
+    height    : 100%;
     background: rgba(255, 255, 255, 0.26);
 }
 
@@ -200,14 +200,14 @@ img {
 }
 
 .fotoEstudiante {
-    width: 50%;
-    height: 100%;
+    width     : 50%;
+    height    : 100%;
     background: rgba(255, 255, 255, 0.26);
 }
 
 .informacionEstudiante {
-    width: 50%;
-    height: 100%;
+    width     : 50%;
+    height    : 100%;
     background: rgba(255, 255, 255, 0.26);
 }
 
@@ -221,32 +221,32 @@ img {
 /*Inicio Secion contacto*/
 
 #Contacto {
-    display: flex;
-    background: rgba(255, 255, 255, 0.26);
+    display      : flex;
+    background   : rgba(255, 255, 255, 0.26);
     margin-bottom: 0;
 }
 
 .DivenSeccionContacto {
-    width: 50%;
+    width : 50%;
     height: 100%;
 }
 
 #contenedorFormulario {
-    display: flex;
+    display        : flex;
     justify-content: center;
-    width: 100%;
-    height: 100%;
+    width          : 100%;
+    height         : 100%;
 }
 
 #formcontacto {
-    width: 70%;
+    width : 70%;
     height: 100%;
 }
 
 .desplegarhaciaabao {
     display: block;
-    width: 100%;
-    margin: 0.1rem;
+    width  : 100%;
+    margin : 0.1rem;
 }
 
 #formcontacto textarea {
@@ -258,12 +258,12 @@ img {
 }
 
 #contenedordebotn {
-    display: flex;
+    display        : flex;
     justify-content: center;
 }
 
 #submitbuttom {
-    width: 15%;
+    width : 15%;
     height: auto;
     margin: 0.1rem;
 }
@@ -279,7 +279,7 @@ img {
 }
 
 .container {
-    display: flex;
+    display        : flex;
     justify-content: center;
 }
 
@@ -300,41 +300,41 @@ img {
 /*Inicio Seccion Pie*/
 
 #Pie {
-    bottom: 0;
-    height: 5rem;
+    bottom         : 0;
+    height         : 5rem;
     justify-content: center;
 }
 
 #Pie #contenido {
-    padding-top: 0.3rem;
+    padding-top   : 0.3rem;
     padding-bottom: 1rem;
-    background: rgba(78, 10, 1, 0.7);
-    width: 100%;
-    height: 100%;
+    background    : rgba(78, 10, 1, 0.7);
+    width         : 100%;
+    height        : 100%;
 }
 
 #Pie #contenido nav {
     margin-top: 1rem;
     background: rgba(255, 255, 255, 0.26);
-    width: 100%;
-    height: 80%;
+    width     : 100%;
+    height    : 80%;
 }
 
 #Pie nav ul {
-    display: flex;
+    display   : flex;
     background: rgba(255, 255, 255, 0.26);
     list-style: none;
 }
 
 #Pie nav ul li {
-    display: flex;
+    display        : flex;
     justify-content: center;
-    align-items: center;
-    width: 33%;
-    height: 1.9rem;
-    margin: 0.1%;
-    padding: 1rem;
-    color: white;
+    align-items    : center;
+    width          : 33%;
+    height         : 1.9rem;
+    margin         : 0.1%;
+    padding        : 1rem;
+    color          : white;
 }
 
 .contenedorIconos {
