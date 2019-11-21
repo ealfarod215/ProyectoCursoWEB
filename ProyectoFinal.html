@@ -66,16 +66,6 @@
                         de actividades creativas, tales como: Artes Escénicas en: teatro, danza, música y otros.
                     </p>
                     <p>
-                        La Escuela de enseñanza, ofrece cursos en distintas áreas, a mencionar:
-                        <ul>
-                            <li>Música</li>
-                            <li>Artes Coreográficas</li>
-                            <li>Artes Modernas</li>
-                            <li>Artes Visuales</li>
-                            <li>Idiomas y otros</li>
-                        </ul>
-                    </p>
-                    <p>
                         Su historia, indica que gracias a la visión y la creación del Departamento de Cultura en la
                         Municipalidad, y de la creación de la Asociación de Desarrollo Específica Pro Rescate Histórico,
                         Arquitectónico y Cultural (ADERHAC), se ha logrado posicionar
@@ -106,13 +96,41 @@
             <div class="fotoProfes">
                 <h1>Foto Profesor</h1>
             </div>
-            <div class="contenidoProfe">Aqui va la informacion</div>
+            <div class="contenidoProfe">
+                <div id="valorBusquedaProfesor" class="espacio">
+                    <form id="formcontactoProfesor" method="post" action="">
+                        <label class="">Numero Cedula:</label>
+                        <input id="numeroCedulaProfesor" type="text" name="cedulaProfesor" value="" class="">
+                        <input id="submitbuttom" type="submit" name="Send" value="Submit">
+
+                    </form>
+                </div>
+                <div id="informacionProfesor" class="espacio">
+                    <label class="desplegarhaciaabao">Informacion del Profesor:</label>
+                    <textarea name="infProfesor" id="infoProfesor" class="desplegarhaciaabao"></textarea>
+                </div>
+            </div>
         </section>
         <section id="Estudiantes" class="tamano">
             <div class="fotoEstudiante">
                 <h1> Foto Estudiantes</h1>
             </div>
-            <div class="informacionEstudiante">informacionEstudiante</div>
+            <div class="informacionEstudiante">
+                <div id="valorBusquedaEstudiante" class="espacio">
+                    <form id="formcontactoEstudiante" method="post" action="">
+                        <label class="">Numero Cedula:</label>
+                        <input id="numeroCedulaEstudiante" type="text" name="cedulaEstudiante" value="" class="">
+                        <input id="submitbuttomEstudiante" type="submit" name="Send" value="Submit">
+
+                    </form>
+                </div>
+                <div id="informaEstudiante" class="espacio">
+                    <label class="desplegarhaciaabao">Informacion del Profesor:</label>
+                    <textarea name="infEstudiante" id="infoEstudiante" class="desplegarhaciaabao"></textarea>
+                </div>
+            </div>
+
+
         </section>
 
         <section id="Cursos" class="tamano">
@@ -148,7 +166,6 @@
                     <input id="numtelefono" type="text" name="Telefono" value="" class="desplegarhaciaabao">
                     <label class="desplegarhaciaabao">Descripcion:</label>
                     <textarea name="Descripcion" id="descripcion" class="desplegarhaciaabao"></textarea>
-
                     <div id="contenedordebotn">
                         <input id="submitbuttom" type="submit" name="Send" value="Submit">
                     </div>

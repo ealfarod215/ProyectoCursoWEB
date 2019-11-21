@@ -182,6 +182,41 @@ body {
     background: rgba(255, 255, 255, 0.26);
 }
 
+#valorBusquedaProfesor {
+    padding-top: 1rem;
+    width      : 95%;
+    height     : 19%;
+}
+
+#formcontactoProfesor {
+    display: flex;
+    width : 95%;
+    height: 30%;
+}
+
+#numeroCedulaProfesor {
+    width: 40%;
+    margin-right: 3rem;
+    margin-left: 3rem;
+
+}
+
+
+
+#submitbuttom{
+    width: 5rem;
+}
+
+#informacionProfesor {
+    width : 95%;
+    height: 80%;
+}
+
+#informacionProfesor #infoProfesor {
+    width : 95%;
+    height: 80%;
+}
+
 
 /*Fin seccion Profesores*/
 
@@ -209,6 +244,45 @@ img {
     width     : 50%;
     height    : 100%;
     background: rgba(255, 255, 255, 0.26);
+}
+
+#valorBusquedaEstudiante {
+    padding-top: 1rem;
+    width      : 95%;
+    height     : 19%;
+}
+
+#formcontactoEstudiante {
+    display: flex;
+    width : 95%;
+    height: 30%;
+}
+
+#numeroCedulaEstudiante {
+    width: 40%;
+    margin-right: 3rem;
+    margin-left: 3rem;
+
+}
+
+
+
+#submitbuttomEstudiante{
+    width: 5rem;
+}
+
+#informaEstudiante {
+    width : 95%;
+    height: 80%;
+}
+
+#informaEstudiante #infoEstudiante {
+    width : 95%;
+    height: 80%;
+}
+
+.espacio{
+    margin-left: 2rem;    
 }
 
 
