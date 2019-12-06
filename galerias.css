@@ -1,4 +1,66 @@
 /*******************Galeria Profesores**********************/
 
+#contenedorFotosProfesores {
+    width: 75%;
+    height: 95%;
+    margin-left: 8rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.animacionProfesores {
+    width: 50%;
+    height: 100%;
+    background: url(imagenesGaleriaProfesor/fezbot2000-GjRe_H5qtWE-unsplash.jpg) center center/cover;
+    animation: animacion 10s linear infinite;
+}
+
+@keyframes animacion {
+    25% {
+        background-image: url(imagenesGaleriaProfesor/jallen-fosati-kX8p3etvVq8-unsplash.jpg);
+    }
+    50% {
+        background-image: url(imagenesGaleriaProfesor/mariana-vusiatytska-1PlJFiOyacw-unsplash.jpg);
+    }
+    75% {
+        background-image: url(imagenesGaleriaProfesor/william-recinos-qtYhAQnIwSE-unsplash.jpg);
+    }
+    100% {
+        background-image: url(imagenesGaleriaProfesor/william-white-NDGzkMIasJQ-unsplash.jpg);
+    }
+}
+
 
 /*******************Galeria Estudiantes**********************/
+
+#contenedorFotosEstudiante {
+    width: 75%;
+    height: 95%;
+    margin-left: 8rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.animacionEstudiantes {
+    width: 50%;
+    height: 100%;
+    background: url(imagenesGaleriaEstudiante/17205784789_2b14bba861_o.jpg) center center/cover;
+    animation: animacionEstudiante 10s linear infinite;
+}
+
+@keyframes animacionEstudiante {
+    25% {
+        background-image: url(imagenesGaleriaEstudiante/17391689531_52f87352b2_o.jpg);
+    }
+    50% {
+        background-image: url(imagenesGaleriaEstudiante/andy-lee-L66CO3n4gxU-unsplash.jpg);
+    }
+    75% {
+        background-image: url(imagenesGaleriaEstudiante/jon-tyson-9b6yj0m2WVA-unsplash.jpg);
+    }
+    100% {
+        background-image: url(imagenesGaleriaEstudiante/kelly-sikkema-S4eh9DWTId4-unsplash.jpg);
+    }
+}
