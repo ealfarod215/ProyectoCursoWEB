@@ -1,0 +1,35 @@
+.check-5:checked~.check-galery__list-wrap .check-galery__item:nth-child(1) {
+    opacity: 1;
+}
+
+.check-5:checked~.arrow-group-5 {
+    display: block;
+}
+
+.check-5:checked~.check-galery__dot-list [for="check-5"] {
+    background-color: rgb(247, 233, 214);
+}
+
+.check-6:checked~.check-galery__list-wrap .check-galery__item:nth-child(2) {
+    opacity: 1;
+}
+
+.check-6:checked~.arrow-group-6 {
+    display: block;
+}
+
+.check-6:checked~.check-galery__dot-list [for="check-6"] {
+    background-color: rgb(247, 233, 214);
+}
+
+.check-7:checked~.check-galery__list-wrap .check-galery__item:nth-child(3) {
+    opacity: 1;
+}
+
+.check-7:checked~.arrow-group-7 {
+    display: block;
+}
+
+.check-7:checked~.check-galery__dot-list [for="check-7"] {
+    background-color: rgb(247, 233, 214);
+}

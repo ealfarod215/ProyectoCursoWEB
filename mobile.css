@@ -7,12 +7,12 @@ h1 {
 
 #Encabezado nav {
     background: none;
-    position  : relative;
+    position: relative;
 }
 
 #Encabezado nav ul {
     background: none;
-    display   : block;
+    display: block;
 }
 
 #Encabezado nav ul li {
@@ -21,35 +21,35 @@ h1 {
 
 .menu-wrap {
     position: fixed;
-    top     : 0;
-    left    : 0;
-    z-index : 1;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .menu-wrap .toggler {
     /*Este es el checkbox*/
     position: absolute;
-    top     : 0;
-    left    : 2px;
-    z-index : 2;
-    cursor  : pointer;
-    width   : 50px;
-    height  : 50px;
-    opacity : 0;
+    top: 0;
+    left: 2px;
+    z-index: 2;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
 }
 
 .menu-wrap .hamburger {
     /*Este es elcuadrito esquinero*/
-    position       : absolute;
-    top            : 0;
-    left           : 0;
-    z-index        : 1;
-    width          : 30px;
-    height         : 30px;
-    padding        : 1rem;
-    background     : rgba(229, 148, 0, 0.9);
-    display        : flex;
-    align-items    : center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    padding: 1rem;
+    background: rgba(229, 148, 0, 0.9);
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
@@ -57,15 +57,15 @@ h1 {
 /*Hamburger line, la primera linea*/
 
 .menu-wrap .hamburger>div {
-    position       : relative;
-    flex           : none;
-    width          : 100%;
-    height         : 2px;
-    background     : #fff;
-    display        : flex;
-    align-items    : center;
+    position: relative;
+    flex: none;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    transition     : all 0.4s ease;
+    transition: all 0.4s ease;
 }
 
 
@@ -77,12 +77,12 @@ h1 {
 
 .menu-wrap .hamburger>div::after {
     /*Tercera linea*/
-    content   : '';
-    position  : absolute;
-    z-index   : 1;
-    top       : -10px;
-    width     : 100%;
-    height    : 2px;
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+    height: 2px;
     background: inherit;
 }
 
@@ -108,7 +108,7 @@ h1 {
 
 .menu-wrap .toggler:checked+.hamburger>div::before,
 .menu-wrap .toggler:checked+.hamburger>div::after {
-    top      : 0;
+    top: 0;
     transform: rotate(90deg);
 }
 
@@ -130,7 +130,7 @@ h1 {
 }
 
 .menu-wrap .toggler:checked~.menu>div {
-    transform          : scale(1);
+    transform: scale(1);
     transition-duration: 0.75s;
 }
 
@@ -139,7 +139,7 @@ h1 {
 }
 
 .menu-wrap .toggler:checked~.menu>div>div {
-    opacity   : 1;
+    opacity: 1;
     transition: opacity 0.4s ease 0.4s;
 }
 
@@ -147,15 +147,15 @@ h1 {
 /* Box of List items */
 
 .menu-wrap .menu {
-    position       : fixed;
-    top            : 0;
-    left           : 0;
-    width          : 100%;
-    height         : 100%;
-    visibility     : hidden;
-    overflow       : hidden;
-    display        : flex;
-    align-items    : center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
@@ -169,17 +169,17 @@ h1 {
     /*Se pone lo de align-item, justify y flex para centrar*/
     background: rgba(236, 148, 66, 0.9);
     ;
-    width : 300vw;
+    width: 300vw;
     height: 300vw;
     /* Se quiere extender la altura muy alto*/
     display: flex;
     /*Se esta recentrando la lista para que aparesca*/
-    align-items    : center;
+    align-items: center;
     justify-content: center;
-    flex           : none;
+    flex: none;
     /*Como tiene una propiedad de flex* el width esta siendo afectado*/
-    transform    : scale(2);
-    transition   : all 0.4s ease;
+    transform: scale(2);
+    transition: all 0.4s ease;
     border-radius: 50%;
 }
 
@@ -188,24 +188,24 @@ h1 {
 
 .menu-wrap .menu>div>div {
     text-align: center;
-    max-width : 90vw;
+    max-width: 90vw;
     max-height: 100vh;
-    opacity   : 0;
+    opacity: 0;
     transition: opacity 0.4s ease;
 }
 
 .menu-wrap .menu>div>div>ul,
 .listaMenu li {
     list-style: none;
-    color     : #fff;
-    font-size : 1.5rem;
-    padding   : 1rem;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem;
 }
 
 .menu-wrap .menu>div>div>ul>li>a {
-    color          : inherit;
+    color: inherit;
     text-decoration: none;
-    transition     : color 0.4s ease;
+    transition: color 0.4s ease;
 }
 
 .menu-wrap .menu>div>div>ul>li>a:hover {
@@ -230,17 +230,17 @@ h1 {
 }
 
 .fotoAbout {
-    width : 100%;
+    width: 100%;
     height: 50%;
 }
 
 .contenidoAbout {
-    width : 95%;
+    width: 95%;
     height: 50%;
 }
 
 #parrafos {
-    width : 100%;
+    width: 100%;
     height: 100%;
 }
 
@@ -255,12 +255,12 @@ h1 {
 }
 
 .fotoProfes {
-    width : 100%;
+    width: 100%;
     height: 50%;
 }
 
 .contenidoProfe {
-    width : 100%;
+    width: 100%;
     height: 50%;
 }
 
@@ -272,15 +272,28 @@ h1 {
 }
 
 .fotoEstudiante {
-    width : 100%;
+    width: 100%;
     height: 50%;
 }
 
 .informacionEstudiante {
-    width : 100%;
+    width: 100%;
     height: 50%;
-
 }
+
+
+/*Inicio seccion Cursos*/
+
+.container {
+    height: 60%;
+    align-items: center;
+}
+
+
+/*Fin seccion Cursos*/
+
+
+/**************************/
 
 
 /*Fin seccion Estudiante*/
@@ -296,7 +309,7 @@ h1 {
 }
 
 .DivenSeccionContacto {
-    width : 100%;
+    width: 100%;
     height: 50%;
 }
 
@@ -310,18 +323,18 @@ h1 {
 /*Inicio de Seccion Pie*/
 
 #Pie nav ul {
-    display        : flex;
+    display: flex;
     justify-content: space-around;
-    align-items    : center;
+    align-items: center;
 }
 
 #Pie nav ul li {
-    font-size    : small;
-    width        : 100%;
-    height       : 1.9rem;
-    margin       : 0.1%;
-    padding      : 1rem;
-    color        : white;
+    font-size: small;
+    width: 100%;
+    height: 1.9rem;
+    margin: 0.1%;
+    padding: 1rem;
+    color: white;
     /*background : rgba(0, 0, 0,0.7);
     background   : rgba(78, 10, 1, 0.7);
     border-radius: 1rem;*/

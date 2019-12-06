@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="mobile.css">
     <link rel="stylesheet" href="galerias.css">
+    <link rel="stylesheet" href="galeriaActivos.css">
+    <link rel="stylesheet" href="galeriaCursos.css">
     <script src="https://kit.fontawesome.com/1a7b3b1445.js" crossorigin="anonymous"></script>
 </head>
 
@@ -124,75 +126,175 @@
         <section id="Cursos" class="tamano">
             <h1>Cursos</h1>
             <div class="container">
-                <img src="Imagenes/brandon-wilson-qzpzH2Nfmyk-unsplash.jpg" alt="">
-                <img src="Imagenes/dominik-scythe-MTO5SmPraX4-unsplash.jpg" alt="">
-                <img src="Imagenes/elijah-m-henderson-xgT3iQDIijU-unsplash.jpg" alt="">
-                <img src="Imagenes/freestocks-org-LoppUA_9F1w-unsplash.jpg" alt="">
+                <div class="check-galery">
+                    <input class="check-galery__input  check-1" id="check-1" name="galery-1" type="radio" checked>
+                    <input class="check-galery__input  check-2" id="check-2" name="galery-1" type="radio">
+                    <input class="check-galery__input  check-3" id="check-3" name="galery-1" type="radio">
+                    <input class="check-galery__input  check-4" id="check-4" name="galery-1" type="radio">
+
+                    <div class="check-galery__list-wrap">
+                        <ul class="check-galery__list">
+                            <li class="check-galery__item">
+
+                                <img class="check-galery__pic" src="Imagenes/brandon-wilson-qzpzH2Nfmyk-unsplash.jpg" alt="ban-image">
+                                <label class="descrip">Aqui va descripcion</label>
+                            </li>
+
+                            <li class="check-galery__item">
+                                <img class="check-galery__pic" src="Imagenes/dominik-scythe-MTO5SmPraX4-unsplash.jpg" alt="ban-image">
+                                <label class="descrip">Aqui va descripcion</label>
+                            </li>
+
+                            <li class="check-galery__item">
+                                <img class="check-galery__pic" src="Imagenes/elijah-m-henderson-xgT3iQDIijU-unsplash.jpg" alt="ban-image">
+                                <label class="descrip">Aqui va descripcion</label>
+                            </li>
+
+                            <li class="check-galery__item">
+                                <img class="check-galery__pic" src="Imagenes/freestocks-org-LoppUA_9F1w-unsplash.jpg" alt="ban-image">
+                                <label class="descrip">Aqui va descripcion</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="check-galery__arrow-group  arrow-group-1">
+                        <label class="check-galery__arrow  check-galery__arrow--left" for="check-4"></label>
+                        <label class="check-galery__arrow  check-galery__arrow--right" for="check-2"></label>
+                    </div>
+
+                    <div class="check-galery__arrow-group  arrow-group-2">
+                        <label class="check-galery__arrow  check-galery__arrow--left" for="check-1"></label>
+                        <label class="check-galery__arrow  check-galery__arrow--right" for="check-3"></label>
+                    </div>
+
+                    <div class="check-galery__arrow-group  arrow-group-3">
+                        <label class="check-galery__arrow  check-galery__arrow--left" for="check-2"></label>
+                        <label class="check-galery__arrow  check-galery__arrow--right" for="check-4"></label>
+                    </div>
+
+                    <div class="check-galery__arrow-group  arrow-group-4">
+                        <label class="check-galery__arrow  check-galery__arrow--left" for="check-3"></label>
+                        <label class="check-galery__arrow  check-galery__arrow--right" for="check-1"></label>
+                    </div>
+
+                    <div class="check-galery__dot-list">
+                        <label class="check-galery__dot" for="check-1"></label>
+                        <label class="check-galery__dot" for="check-2"></label>
+                        <label class="check-galery__dot" for="check-3"></label>
+                        <label class="check-galery__dot" for="check-4"></label>
+                    </div>
+                </div>
             </div>
         </section>
-    </div>
-    <section id="Activos" class="tamano">
-        <h1>Activos</h1>
-        <div class="container">
-            <img src="Imagenes/thomas-litangen-SP9HcRASMPE-unsplash.jpg" alt="">
-            <img src="Imagenes/kari-shea-1SAnrIxw5OY-unsplash.jpg" alt="">
-            <img src="Imagenes/susan-mohr-pMCP8c8_xi4-unsplash.jpg" alt="">
-        </div>
-    </section>
-    <section id="Contacto" class="tamano">
-        <div id="formularioCorreo" class="DivenSeccionContacto">
-            <h1>Contacto</h1>
-            <div id="contenedorFormulario">
-                <form id="formcontacto" method="post" action="formularioContactenos/index.php">
-                    <label class="desplegarhaciaabao">Nombre:</label>
-                    <input id="nombre" type="text" name="Nombre" value="" class="desplegarhaciaabao">
-                    <label class="desplegarhaciaabao">Apellido:</label>
-                    <input id="apellido" type="text" name="Apellido" value="" class="desplegarhaciaabao">
-                    <label class="desplegarhaciaabao">Correo:</label>
-                    <input id="correo" type="text" name="Correo" value="" class="desplegarhaciaabao">
-                    <label class="desplegarhaciaabao">Numero de telefono:</label>
-                    <input id="numtelefono" type="text" name="Telefono" value="" class="desplegarhaciaabao">
-                    <label class="desplegarhaciaabao">Descripcion:</label>
-                    <textarea name="Descripcion" id="descripcion" class="desplegarhaciaabao"></textarea>
-                    <div id="contenedordebotn">
-                        <input id="submitbuttom" type="submit" name="Send" value="Submit">
+
+        <section id="Activos" class="tamano">
+            <h1>Activos</h1>
+            <div class="container">
+                <div class="check-galery">
+                    <input class="check-galery__input  check-5" id="check-5" name="galery-2" type="radio" checked>
+                    <input class="check-galery__input  check-6" id="check-6" name="galery-2" type="radio">
+                    <input class="check-galery__input  check-7" id="check-7" name="galery-2" type="radio">
+                    <input class="check-galery__input  check-8" id="check-8" name="galery-2" type="radio">
+
+                    <div class="check-galery__list-wrap">
+                        <ul class="check-galery__list">
+                            <li class="check-galery__item">
+
+                                <img class="check-galery__pic" src="Imagenes/thomas-litangen-SP9HcRASMPE-unsplash.jpg" alt="ban-image">
+                                <label class="descrip">Aqui va descripcion</label>
+                            </li>
+
+                            <li class="check-galery__item">
+                                <img class="check-galery__pic" src="Imagenes/kari-shea-1SAnrIxw5OY-unsplash.jpg" alt="ban-image">
+                                <label class="descrip">Aqui va descripcion</label>
+                            </li>
+
+                            <li class="check-galery__item">
+                                <img class="check-galery__pic" src="Imagenes/susan-mohr-pMCP8c8_xi4-unsplash.jpg" alt="ban-image">
+                                <label class="descrip">Aqui va descripcion</label>
+                            </li>
+
+                        </ul>
                     </div>
-                </form>
+
+                    <div class="check-galery__arrow-group  arrow-group-5">
+                        <label class="check-galery__arrow  check-galery__arrow--left" for="check-7"></label>
+                        <label class="check-galery__arrow  check-galery__arrow--right" for="check-6"></label>
+                    </div>
+
+                    <div class="check-galery__arrow-group  arrow-group-6">
+                        <label class="check-galery__arrow  check-galery__arrow--left" for="check-5"></label>
+                        <label class="check-galery__arrow  check-galery__arrow--right" for="check-7"></label>
+                    </div>
+
+                    <div class="check-galery__arrow-group  arrow-group-7">
+                        <label class="check-galery__arrow  check-galery__arrow--left" for="check-6"></label>
+                        <label class="check-galery__arrow  check-galery__arrow--right" for="check-5"></label>
+                    </div>
+
+                    <div class="check-galery__dot-list">
+                        <label class="check-galery__dot" for="check-5"></label>
+                        <label class="check-galery__dot" for="check-6"></label>
+                        <label class="check-galery__dot" for="check-7"></label>
+                    </div>
+                </div>
             </div>
 
-        </div>
-        <div id="mapa" class="DivenSeccionContacto">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.225754579497!2d-84.24334258458686!3d9.915146977208504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0ff16d8ca8fa7%3A0x82ed76e77fbb3858!2sCasa%20de%20la%20Cultura!5e0!3m2!1ses!2scr!4v1573416235052!5m2!1ses!2scr"
-                width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="">
-            </iframe>
-        </div>
-    </section>
-    <footer id="Pie" class="HyFtamano">
-        <div id="contenido">
-            <nav>
-                <ul>
-                    <li>
-                        <p>Tel. trab.: (506) 2249-3124</p>
-                    </li>
-                    <li>
-                        <p>Correo electrónico: ccdemora@gmail.com</p>
-                    </li>
-                    <li>
-                        <p>Correo electrónico alternativo: karina.zuniga@mora.go.crs</p>
-                    </li>
-                    <li>
-                        <div>
-                            <p class="contenedorIconos">Encuentre más en:</p>
-                            <a href="https://www.facebook.com/CasaCulturaMora/?ref=br_rs"><i class="fab fa-facebook">
-                                </i></a>
-                            <a class="cambiarcolor" href="https://www.youtube.com/channel/UCIm9gyNg1kmIUYpPsCregew"><i
-                                    class="fab fa-youtube"></i></a>
+        </section>
+        <section id="Contacto" class="tamano">
+            <div id="formularioCorreo" class="DivenSeccionContacto">
+                <h1>Contacto</h1>
+                <div id="contenedorFormulario">
+                    <form id="formcontacto" method="post" action="formularioContactenos/index.php">
+                        <label class="desplegarhaciaabao">Nombre:</label>
+                        <input id="nombre" type="text" name="Nombre" value="" class="desplegarhaciaabao">
+                        <label class="desplegarhaciaabao">Apellido:</label>
+                        <input id="apellido" type="text" name="Apellido" value="" class="desplegarhaciaabao">
+                        <label class="desplegarhaciaabao">Correo:</label>
+                        <input id="correo" type="text" name="Correo" value="" class="desplegarhaciaabao">
+                        <label class="desplegarhaciaabao">Numero de telefono:</label>
+                        <input id="numtelefono" type="text" name="Telefono" value="" class="desplegarhaciaabao">
+                        <label class="desplegarhaciaabao">Descripcion:</label>
+                        <textarea name="Descripcion" id="descripcion" class="desplegarhaciaabao"></textarea>
+                        <div id="contenedordebotn">
+                            <input id="submitbuttom" type="submit" name="Send" value="Submit">
                         </div>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </footer>
+                    </form>
+                </div>
+
+            </div>
+            <div id="mapa" class="DivenSeccionContacto">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.225754579497!2d-84.24334258458686!3d9.915146977208504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0ff16d8ca8fa7%3A0x82ed76e77fbb3858!2sCasa%20de%20la%20Cultura!5e0!3m2!1ses!2scr!4v1573416235052!5m2!1ses!2scr"
+                    width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="">
+            </iframe>
+            </div>
+        </section>
+        <footer id="Pie" class="HyFtamano">
+            <div id="contenido">
+                <nav>
+                    <ul>
+                        <li>
+                            <p>Tel. trab.: (506) 2249-3124</p>
+                        </li>
+                        <li>
+                            <p>Correo electrónico: ccdemora@gmail.com</p>
+                        </li>
+                        <li>
+                            <p>Correo electrónico alternativo: karina.zuniga@mora.go.crs</p>
+                        </li>
+                        <li>
+                            <div>
+                                <p class="contenedorIconos">Encuentre más en:</p>
+                                <a href="https://www.facebook.com/CasaCulturaMora/?ref=br_rs"><i class="fab fa-facebook">
+                                </i></a>
+                                <a class="cambiarcolor" href="https://www.youtube.com/channel/UCIm9gyNg1kmIUYpPsCregew"><i
+                                    class="fab fa-youtube"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
 </body>
 
 </html>
