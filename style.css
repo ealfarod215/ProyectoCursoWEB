@@ -94,7 +94,9 @@ body {
     display        : flex;
     justify-content: center;
     align-items    : center;
-    background     : url(Imagenes/keys_treble_clef_music_notes_74359_1920x1080.jpg);
+    background     : url(Imagenes/IMG_7420.jpg);
+    background-size: 100%;
+    background-position-y: center;
     position       : relative;
     margin-top     : 5.3%;
 }
