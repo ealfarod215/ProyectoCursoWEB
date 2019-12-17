@@ -1,8 +1,10 @@
+<?php $conexion = mysqli_connect("localhost", "root", "realp132413", "bd_casacultura"); ?> 
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
+    <meta charset="ISO-8859-1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Sitio web para sentro cultural de mora">
@@ -56,7 +58,7 @@
             <div class="contenidoAbout">
                 <div id="parrafos">
                     <p>
-                        El Desarrollo Cultural de Mora , inicia con la apertura de la Casa de la Cultura, la cual abrió
+                        El Desarrollo Cultural de Mora, inicia con la apertura de la Casa de la Cultura, la cual abrió
                         sus puertas el 11 de marzo del 2005, con alrededor de 300 estudiantes y 30 profesores dedicados
                         al Desarrollo cultural, arte e idiomas, los cuáles buscan atraer,
                         promover y contribuir permanentemente al desarrollo integral de la cultura en los habitantes del
@@ -70,7 +72,7 @@
                     </p>
                     <p>
                         Su historia, indica que gracias a la visión y la creación del Departamento de Cultura en la
-                        Municipalidad, y de la creación de la Asociación de Desarrollo Específica Pro Rescate Histórico,
+                        Municipalidad, y de la creación de la Asociación de Desarrollo Específica Pro-Rescate Histórico,
                         Arquitectónico y Cultural (ADERHAC), se ha logrado posicionar
                         a Mora, cómo un cantón ejemplar en el tema Cultural, esto gracias al convenio establecido entre
                         ambas partes, pues son los encargados de promover el Desarrollo Cultural en el cantón, lo cual
@@ -80,7 +82,7 @@
                         disfrute de las bellas artes.
                     </p>
                     <p>
-                        Desde hace 12 años, el cantón de Mora, ha disfrutado un crecimiento continuo en el desarrollo
+                        Desde hace 12 años, el cantón de Mora ha disfrutado un crecimiento continuo en el desarrollo
                         humano y cultural, un cantón donde las personas pueden disfrutar de su derecho a la Cultura,
                         esto gracias a la oferta artística y cultural que se ofrece durante
                         el año, a mencionar:
@@ -101,35 +103,48 @@
             </div>
             <div class="contenidoProfe">
                 <div id="valorBusquedaProfesor" class="espacio">
-                    <form id="formcontactoProfesor" method="post" action="">
-                        <label class="">Numero Cedula:</label>
-                        <input id="numeroCedulaProfesor" type="text" name="cedulaProfesor" value="" class="">
-                        <input id="submitbuttom" type="submit" name="Send" value="Submit">
-
-                    </form>
+                        <h2>Contamos con grandes profesionales en el ámbito musical</h2>
+                        <h3>Algunos de nuestros profesores:</h3>
                 </div>
                 <div id="informacionProfesor" class="espacio">
-                    <label class="desplegarhaciaabao">Informacion del Profesor:</label>
-                    <textarea name="infProfesor" id="infoProfesor" class="desplegarhaciaabao"></textarea>
+                    
+                    <?php
+                    $sql = "SELECT nombre, apellido_1, apellido_2, numero_telefono, correo_electronico FROM profesor";
+                    $rec = mysqli_query($conexion, $sql);
+                    while ($row = mysqli_fetch_array($rec)) {
+                        ?>
+                            <li> Profesor: <?php echo $row['nombre']?> <?php echo $row['apellido_1']?> <?php echo $row['apellido_2']?>, Contacto: <?php echo $row['numero_telefono']?>,
+                              Correo electrónico<?php echo $row['correo_electronico']?>
+                            </li>
+                    <?php
+                    }
+                    ?>
                 </div>
             </div>
         </section>
         <section id="Estudiantes" class="tamano">
             <div class="fotoEstudiante">
                 <div id="contenedorFotosEstudiante" class="animacionEstudiantes"></div>
+                
             </div>
             <div class="informacionEstudiante">
                 <div id="valorBusquedaEstudiante" class="espacio">
-                    <form id="formcontactoEstudiante" method="post" action="">
-                        <label class="">Numero Cedula:</label>
-                        <input id="numeroCedulaEstudiante" type="text" name="cedulaEstudiante" value="" class="">
-                        <input id="submitbuttomEstudiante" type="submit" name="Send" value="Submit">
-
-                    </form>
+                <h2>Contamos con una alta variedad de cursos para toda la comunidad del cantón de Mora</h2>
+                <h3>Parte de los cursos que ofrecemos a la comunidad son: </h3>
                 </div>
                 <div id="informaEstudiante" class="espacio">
-                    <label class="desplegarhaciaabao">Informacion del Estudiante:</label>
-                    <textarea name="infEstudiante" id="infoEstudiante" class="desplegarhaciaabao"></textarea>
+                <?php
+                    $sql = "SELECT nombre, maximo_cupos, minimo_cupo, dia  FROM curso";
+                    $rec = mysqli_query($conexion, $sql);
+                    while ($row = mysqli_fetch_array($rec)) {
+                        ?>
+                            <li> Curso de: <?php echo $row['nombre']?>, limite máximo  de alumnos: <?php echo $row['maximo_cupos']?>, mínimo  de alumnos: <?php echo $row['minimo_cupo']?> y
+                             se imparte los días <?php echo $row['dia']?>
+                             
+                            </li>
+                    <?php
+                    }
+                    ?>
                 </div>
             </div>
 
@@ -151,25 +166,25 @@
 
                                 <img class="check-galery__pic" src="Imagenes/brandon-wilson-qzpzH2Nfmyk-unsplash.jpg"
                                     alt="ban-image">
-                                <label class="descrip">Aqui va descripcion</label>
+                                <label class="descrip">Cursos de Guitarra Acústica</label>
                             </li>
 
                             <li class="check-galery__item">
                                 <img class="check-galery__pic" src="Imagenes/dominik-scythe-MTO5SmPraX4-unsplash.jpg"
                                     alt="ban-image">
-                                <label class="descrip">Aqui va descripcion</label>
+                                <label class="descrip">Cursos de Piano</label>
                             </li>
 
                             <li class="check-galery__item">
                                 <img class="check-galery__pic"
                                     src="Imagenes/elijah-m-henderson-xgT3iQDIijU-unsplash.jpg" alt="ban-image">
-                                <label class="descrip">Aqui va descripcion</label>
+                                <label class="descrip">Cursos de Violín</label>
                             </li>
 
                             <li class="check-galery__item">
                                 <img class="check-galery__pic" src="Imagenes/freestocks-org-LoppUA_9F1w-unsplash.jpg"
                                     alt="ban-image">
-                                <label class="descrip">Aqui va descripcion</label>
+                                <label class="descrip">Cursos de Guitarra Eléctrica</label>
                             </li>
                         </ul>
                     </div>
@@ -219,19 +234,19 @@
 
                                 <img class="check-galery__pic" src="Imagenes/thomas-litangen-SP9HcRASMPE-unsplash.jpg"
                                     alt="ban-image">
-                                <label class="descrip">Aqui va descripcion</label>
+                                <label class="descrip">Préstamo de Amplificadores</label>
                             </li>
 
                             <li class="check-galery__item">
                                 <img class="check-galery__pic" src="Imagenes/kari-shea-1SAnrIxw5OY-unsplash.jpg"
                                     alt="ban-image">
-                                <label class="descrip">Aqui va descripcion</label>
+                                <label class="descrip">Préstamo de Computadoras</label>
                             </li>
 
                             <li class="check-galery__item">
                                 <img class="check-galery__pic" src="Imagenes/susan-mohr-pMCP8c8_xi4-unsplash.jpg"
                                     alt="ban-image">
-                                <label class="descrip">Aqui va descripcion</label>
+                                <label class="descrip">Préstamo de Instrumentos Musicales </label>
                             </li>
 
                         </ul>
